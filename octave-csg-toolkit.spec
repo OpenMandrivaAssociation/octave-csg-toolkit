@@ -7,7 +7,7 @@ Release:	1
 License:	GPLv3+
 Group:		Sciences/Mathematics
 Url:		https://github.com/pr0m1th3as/csg-toolkit
-Source0:	https://github.com/pr0m1th3as/csg-toolkit/archive/v%{version}/%{octpkg}-%{version}.tar.gz
+Source0:	https://github.com/pr0m1th3as/csg-toolkit/archive/v%{version}/csg-toolkit-%{version}.tar.gz
 
 BuildRequires:	octave-devel >= 4.2.0
 BuildRequires:	octave-io
@@ -37,7 +37,7 @@ represented as a triangular mesh in a Wavefront OBJ file format.
 #---------------------------------------------------------------------------
 
 %prep
-%autosetup -p1  -n %{octpkg}-%{version}
+%autosetup -p1 -n %{octpkg}-%{version}
 
 %build
 %set_build_flags
