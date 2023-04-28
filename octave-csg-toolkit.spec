@@ -2,37 +2,38 @@
 
 Summary:	A GNU Octave package for analyzing long bone diaphyseal cross sectional geometry
 Name:		octave-csg-toolkit
-Version:	1.2.3
+Version:	1.3.0
 Release:	1
 License:	GPLv3+
 Group:		Sciences/Mathematics
+#Url:		https://packages.octave.org/csg-toolkit/
 Url:		https://github.com/pr0m1th3as/csg-toolkit
 Source0:	https://github.com/pr0m1th3as/csg-toolkit/archive/v%{version}/csg-toolkit-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 4.2.0
-BuildRequires:	octave-io
+BuildRequires:  octave-devel >= 7.2.0
+BuildRequires:  octave-io >= 2.6.4
 
 Requires:	octave(api) = %{octave_api}
-Requires:	octave-io
+Requires:  	octave-io >= 2.6.4
 
 Requires(post): octave
 Requires(postun): octave
 
 %description
-The present package is based on the long-bone-diaphyseal-CSG-Toolkit and has
-been created to simplify its installation and usage from within GNU Octave.
-
-It is based on novel and robust algorithms for calculating the cross-sectional
-geometric properties of the diaphyses of humerus, ulna, femur, and tibia bones
-represented as a triangular mesh in a Wavefront OBJ file format.
+The present set of GNU Octave functions provides a novel and robust
+algorithm for analyzing the diaphyseal cross-sectional geometric
+properties of long bones, which can be applied to any 3D digital
+model of a humerus, ulna, femur or tibia bone represented as a
+triangular mesh in a Wavefront OBJ file format.
 
 %files
 %license COPYING
-%doc NEWS README.md
-%dir %{octpkglibdir}
-%{octpkglibdir}/*
+%doc NEWS
 %dir %{octpkgdir}
 %{octpkgdir}/*
+%dir %{octpkglibdir}
+%{octpkglibdir}/*
+#{_metainfodir}/*.metainfo.xml
 
 #---------------------------------------------------------------------------
 
