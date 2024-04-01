@@ -2,7 +2,7 @@
 
 Summary:	A GNU Octave package for analyzing long bone diaphyseal cross sectional geometry
 Name:		octave-csg-toolkit
-Version:	1.3.1
+Version:	1.3.2
 Release:	1
 License:	GPLv3+
 Group:		Sciences/Mathematics
