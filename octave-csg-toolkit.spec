@@ -10,11 +10,16 @@ Group:		Sciences/Mathematics
 Url:		https://github.com/pr0m1th3as/csg-toolkit
 Source0:	https://github.com/pr0m1th3as/csg-toolkit/archive/v%{version}/csg-toolkit-%{version}.tar.gz
 
-BuildRequires:  octave-devel >= 7.2.0
-BuildRequires:  octave-io >= 2.6.4
+BuildRequires:	octave-devel >= 7.2.0
+BuildRequires:	octave-datatypes >= 1.0.1
+BuildRequires:	octave-io >= 2.6.4
+BuildRequires:	octave-statistics >= 1.7.4
 
 Requires:	octave(api) = %{octave_api}
-Requires:  	octave-io >= 2.6.4
+Requires:	octave-datatypes >= 1.0.1
+Requires:	octave-io >= 2.6.4
+Requires:	octave-statistics >= 1.7.4
+
 
 Requires(post): octave
 Requires(postun): octave
