@@ -2,7 +2,7 @@
 
 Summary:	A GNU Octave package for analyzing long bone diaphyseal cross sectional geometry
 Name:		octave-csg-toolkit
-Version:	1.4.0
+Version:	1.4.3
 Release:	1
 License:	GPLv3+
 Group:		Sciences/Mathematics
@@ -43,7 +43,7 @@ triangular mesh in a Wavefront OBJ file format.
 #---------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n %{octpkg}-%{version}
+%autosetup -p1 -n csg-toolkit-1.4.3
 
 %build
 %set_build_flags
